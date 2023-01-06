@@ -1,0 +1,220 @@
+/* 放index页面的样式表 首页独有*/
+/* banner */
+.banner {
+    height: 500px;
+    background-color: #f9f9f2;
+}
+.banner .wrapper {
+    position: relative;
+    height: 500px;
+    background-color: #c0c0c0;
+}
+.banner .wrapper img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+/* 侧导航 */
+.banner .aside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.8);
+}
+.banner .aside li {
+    height: 50px;
+    line-height: 50px;
+}
+.banner .aside a {
+    position: relative;
+    /* 使宽度和父级一样 */
+    display: block;
+    padding-left: 36px;
+    padding-right: 19px;
+    width: 250px;
+    height: 50px;
+    /* background-color: pink; */
+    color: #fff;
+}
+.banner .aside a span {
+    margin-left: 15px;
+    font-size: 14px;
+}
+.banner .aside a:hover {
+    background-color: #27ba9b;
+}
+/* a里面最后的位置添加箭头 */
+.banner .aside a::after {
+    position: absolute;
+    content: '>';
+    right: 19px;
+    top: 19px;
+    width: 6px;
+    height: 11px;
+    /* background-image: url(/study/0.png); */
+}
+/* 箭头 */
+.prev,
+.next {
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,.2);
+    background-image: url(/study/0.png);
+    border-radius: 50%;
+}
+/* 
+尺寸不准：
+    1、调试工具确认数值
+    2、写的时候a负责盒子span负责箭头
+*/
+.prev {
+    left: 260px;
+    background-position: -10px -10px;
+}
+.next {
+    right: 10px ;
+    background-position: -10px -10px;
+}
+/* 圆点样式 */
+.banner ol {
+    position: absolute;
+    left: 250px;
+    bottom: 0px;
+    width: 990px;
+    height: 500px;
+    /* background-color: pink; */
+}
+.banner ol li {
+    float: left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 50%;
+    /* 放上去是小手 */
+    cursor: pointer;
+}
+.banner ol .current {
+    background-color: #fff;
+}
+/* 新鲜好物 */
+.goods .hd {
+    height: 114px;
+    /* background-color: pink; */
+    line-height: 114px;
+}
+.goods .hd h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+    height: 114px;
+}
+.goods .hd h2 span {
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999;
+}
+.goods .hd a,
+.shengxian .hd .more {
+    float: right;
+    color: #999;
+}
+.goods .hd a::after,
+.shengxian .hd .more::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background-color: green;
+    vertical-align: middle;
+}
+.goods .bd li {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+.goods .bd li:last-child {
+    margin-right: 0;
+}
+.goods .bd li img {
+    width: 304px; 
+    height:300px;
+}
+.goods .bd li h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.goods .bd li div {
+    color: #9a2e1f;
+    font-size: 17px
+}
+.goods .bd li div span {
+    font-size: 23px;
+}
+/* .goods .bd a {
+    position: relative;
+} */
+.goods .bd li b {
+    position: absolute;
+    left: 17px;
+    top: 18px ;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #27ba9b;
+    font-weight: 400;
+    line-height: 22px;
+}
+/* 生鲜 */
+.shengxian .hd {
+    height: 96px;
+    /* background-color: pink; */
+    line-height: 90px;
+}
+.shengxian .hd h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+}
+.shengxian .hd .more {
+    float: right;
+}
+.shengxian .hd ul {
+    float: right;
+    margin-right: 65px;
+}
+.shengxian .hd ul li {
+    float: left;
+}
+.shengxian .hd li a {
+    padding: 2px 7px;
+    margin-left: 6px;
+}
+.shengxian .hd li a:hover {
+    background-color: #27ba9b;
+    color: #fff;
+}
+.shengxian .bd .left {
+    float: left;
+    width: 240px;
+    height: 610px;
+    /* background-color: pink; */
+}
+.shengxian .bd .right {
+    float: left;
+    width: 1000px;
+    height: 610px;
+    background-color: skyblue;
+}

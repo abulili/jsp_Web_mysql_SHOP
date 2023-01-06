@@ -1,0 +1,22 @@
+.middle {
+	position: relative;
+	left: 30%;
+	height: 400px;
+}
+table {
+	border: 2px inset #b3b3b3;
+}
+td {
+	padding:10px;
+}
+tr {
+	padding:5px;
+	text-align:center;
+}
+.middle .tddel {
+	padding:10px;
+}
+.middle .tddel  .del {
+	color:#e85f5b;
+	text-align:none;
+}

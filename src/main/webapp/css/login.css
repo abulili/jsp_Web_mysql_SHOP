@@ -1,0 +1,151 @@
+@charset "UTF-8";
+.wrapper {
+	positive:relative;
+	/* background-color:orange; */
+	padding: 22px 0;
+	height: 88px;
+	width:auto;
+	box-sizing: border-box;
+}
+.wrapper .logo {
+	width:1000px;
+	margin: 0 auto;
+	background-color:white;
+}
+.wrapper .logo img {
+	position:relative;
+	width:80px;
+	height:80px;
+	top:-15px;
+}
+.wrapper .logo .head-text{
+	position:relative;
+	top:-10px;
+	font-size:26px;
+}
+.content {
+	positive:relative;
+	width:auto;
+	height:600px;
+	background-color:#f9f9f2;
+	background-image:url("../image/background.png");
+	background-repeat: no-repeat;
+	background-position:70px 50px;
+}
+.content .content-inner {
+	width:1000px;
+	height:600px;
+	margin:0 auto;
+}
+
+.content .login-box{
+	position: relative;
+	top: 120px;
+	left: 60%;
+	width: 350px;
+	height: 350px;
+	background-color:white;
+}
+.content .login-box .login-content{
+	position: absolute;
+	width:300px;
+	height:300px;
+	top: 20px;
+	left:30px;
+	/* background-color:blue; */
+}
+.content .login-box .login-content .form-login{
+	position:relative;
+	top:20%;
+}
+
+.content .login-box .login-content .login-input{
+	width:300px;
+	height:42px;
+	/* background-color:#456; */
+}
+.content .login-box .login-content .login-label {
+	float:left;
+	width:38px;
+	height:38px;
+	/* background-color:#366; */
+}
+.content .login-box .login-content .login-name {
+	background-image:url("../image/id.png");
+	background-repeat: no-repeat;
+	background-color:#b3b3b3;
+	background-size:28px 28px;
+	background-position:4px 5px;
+}
+.content .login-box .login-content .login-pwd {
+	background-image:url("../image/pwd.png");
+	background-repeat: no-repeat;
+	background-color:#b3b3b3;
+	background-size:28px 28px;
+	background-position:4px 5px;
+}
+.content .login-box .login-content .login-text {
+	float:left;
+	overflow:hidden;
+	height:38px;
+	width:258px;
+	border:1px solid #b3b3b3;
+	font-size:14px;
+	/* background-color:#888; */
+}
+.content .login-box .login-content .forget {
+	width:300px;
+	height:42px;
+}
+.content .login-box .login-content .forget-pwd {
+	position:absolute;
+	right:0;
+	top:90px;
+}
+.content .login-box .login-content .forget-pwd a {
+	color:#b3b3b3;
+}
+.content .login-box .login-content .btn {
+	width:300px;
+	height:42px;
+}
+.content .login-box .login-content .form-login .btn .btn-sub {
+	width:300px;
+	height:42px;
+	background-color:#e85f5b;
+	color:white;
+	font-size:20px;
+}
+.content .login-box .register-box {
+	position:absolute;
+	width:300px;
+	height:42px;
+	top:270px;
+	left:30px;
+	margin:auto;
+}
+.content .login-box .register-box a {
+	position:absolute;
+	right:0;
+	color:#b3b3b3;
+}
+.footer {
+	positive:relative;
+	height:100px;
+	margin:0 auto;
+	padding:20px;
+	/* background-color:green; */
+}
+.footer .links {
+	text-align:center;
+	color:#b3b3b3
+}
+.footer .links a {
+	margin:0 10px;
+	color:#b3b3b3
+}
+.footer .copyright {
+	padding:5px;
+	text-align:center;
+	color:#b3b3b3
+}

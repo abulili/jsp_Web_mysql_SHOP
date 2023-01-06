@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.content {
+	top:25%;
+	left:40%;
+	background-color:#f9f9f2;
+	height:550px;
+	width:auto;
+}
+.content .rebox {
+	position: relative;
+	left: 30%;
+	top: 20%;
+}
+.content .form-control{
+	
+}
+.content .btn {
+	width:200px;
+	height:40px;
+	background-color:#e85f5b;
+	color:white;
+	font-size:20px;
+}
+.content .login-label {
+	float:left;
+	width:38px;
+	height:38px;
+}
+.content .form-group {
+	padding:10px;
+}
+.content .form-control {
+	line-height:30px;
+	border: 1px solid #808080;
+	border-radius:10px;
+	outline:none;
+}
+.footer {
+	positive:relative;
+	height:100px;
+	margin:0 auto;
+	padding:20px;
+	/* background-color:green; */
+}
+.footer .links {
+	text-align:center;
+	color:#b3b3b3
+}
+.footer .links a {
+	margin:0 10px;
+	color:#b3b3b3
+}
+.footer .copyright {
+	padding:5px;
+	text-align:center;
+	color:#b3b3b3
+}

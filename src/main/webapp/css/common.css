@@ -1,0 +1,213 @@
+/* 各个页面相同的样式表:头 尾部 */
+/* 各个页面应该都有版心 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 快捷导航 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper {
+    height: 52px;
+    /* background-color: pink; */
+}
+
+.shortcut .wrapper ul {
+    float: right;
+}
+
+.shortcut .wrapper li {
+    float: left;
+    /* 文字的高度+上下间距 两排文字 */
+    line-height: 52px;
+}
+
+.shortcut .wrapper a {
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.shortcut .wrapper a span {
+    display: inline-block;
+    margin-right: 8px;
+    width: 60px;
+    height: 50px;
+    background-image: url(/computer-system-small-icon-28491.jpg);
+    /* background-size: px px; */
+    background-position: -207px -115px;
+    vertical-align: middle;
+}
+/* 头部 */
+.header {
+    margin: 30px auto;
+    height: 70px;
+    /* background-color: pink; */
+}
+.logo {
+    float: left;
+    width: 207px;
+    height: 70px;
+    /* background-color: pink; */
+}
+/* logo的搜索引擎优化 */
+.logo h1 {
+    width: 207px;
+    height: 70px;
+}
+.logo h1 a {
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(/study/3.png);
+    background-size: contain;
+    /* 是文字不变 */
+    font-size: 0;
+}
+
+.nav {
+    float: left;
+    margin-left: 40px;
+    height: 70px;
+    /* background-color: pink; */
+}
+.nav li {
+    float: left;
+    margin-right: 48px;
+    line-height: 70px;
+}
+.nav li a {
+    padding-bottom: 7px;
+}
+.nav li a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+.search {
+    position: relative;
+    float: left;
+    margin-top: 24px;
+    margin-left: 34px;
+    width: 172px;
+    height: 30px;
+    /* background-color: green; */
+    border-bottom: 2px solid #e7e7e7;
+}
+.search input {
+    padding-left: 30px;
+    width: 172px;
+    height: 28px;
+}
+.search input ::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+.search span {
+    position: absolute;
+    left: 2px;
+    top: 0;
+    /* 绝对定位后就有了行内块的特点 */
+    /* display: inline-block; */
+    width: 18px;
+    height: 18px;
+    /* background-color: pink; */
+    background-image: url(/computer-system-small-icon-28491.jpg);
+    background-position: -375px -100px;
+}
+.car {
+    position: relative;
+    float: left;
+    margin-top: 28px;
+    margin-left: 15px;
+    width: 23px;
+    height: 23px;
+    /* background-color: salmon; */
+    background-image: url(../image/购物车空.png);
+    object-fit:cover;
+    background-position: -70px -55px;
+}
+.car span {
+    position: absolute;
+    right: -13px;
+    top: -6px;
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}
+/* 版权footer */
+.footer {
+    height: 342px;
+    background-color: #333;
+}
+.footer .wrapper {
+    width: 1393px;
+}
+.footer .top {
+    padding-top: 59px;
+    padding-left: 135px;
+    height: 175px;
+    border-bottom: 3px solid #434343;
+}
+.footer .top li {
+    position: relative;
+    float: left;
+    margin-right: 300px;
+    width: 195px;
+    height: 58px;
+    /* background-color: pink; */
+    /* 图和字一起动了 */
+    line-height: 58px;
+}
+.footer .top li:last-child {
+    margin-right: 0;
+}
+/* 伪元素添加的标签是行内 */
+/* 如果行内块和行内位子无法通过vertical-align或行高对其，就用定位 */
+.footer .top li::before {
+    /* 定位 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display: inline-block; */
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(/OFZqW3HMwk.jpg);
+    background-position:-195px -185px;
+    vertical-align: middle;
+}
+.footer .top li span {
+    /* float/行高/定位 */
+    margin-left: 77px;
+    font-size: 28px;
+    color: #fff;
+}
+/* 选另一张图 */
+.footer .top li:nth-child(2)::before{
+    background-position: -64px 0;
+}
+.footer .bottom {
+    padding-top: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+.footer .bottom a {
+    font-size: 14px;
+    color: #999;
+}
+.footer .bottom p {
+    margin-top: 20px;
+}
